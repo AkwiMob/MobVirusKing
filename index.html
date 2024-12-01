@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Slayer - Chapitre 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #f0f0f0; /* Faux blanc */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Barre de navigation */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #222;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            align-items: center;
+        }
+
+        .nav-bar a {
+            color: #f0f0f0; /* Faux blanc */
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .nav-bar a:hover {
+            background-color: #444;
+        }
+
+        /* Répertoire des chapitres */
+        .chapter-directory {
+            display: none;
+            flex-wrap: wrap;
+            background-color: #222;
+            padding: 10px;
+        }
+
+        .chapter-directory a {
+            display: block;
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #7fa4c4; /* Faux bleu */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .chapter-directory a:hover {
+            background-color: #444;
+            color: #f0f0f0; /* Faux blanc */
+        }
+
+        .chapter-btn {
+            cursor: pointer;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #f0f0f0; /* Faux blanc */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .chapter-btn:hover {
+            background-color: #444;
+        }
+
+        /* Contenu principal */
+        .content {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Navigation en bas */
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #222;
+            padding: 10px 20px;
+        }
+
+        .footer-nav a {
+            color: #f0f0f0; /* Faux blanc */
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            background-color: #444;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-bar, .footer-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-bar a, .footer-nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <script>
+        function toggleChapterDirectory() {
+            const directory = document.getElementById("chapter-directory");
+            directory.style.display = directory.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</head>
+<body>
+    <!-- Barre de navigation en haut -->
+    <div class="nav-bar">
+        <a href="chapter1.html">Chapitre Précédent</a>
+        <a href="https://digital-rectangle-161412.framer.app/">Accueil</a>
+        <a href="chapter2.html">Chapitre Suivant</a>
+        <button class="chapter-btn" onclick="toggleChapterDirectory()">Chapitres</button>
+    </div>
+
+    <!-- Répertoire des chapitres -->
+    <div id="chapter-directory" class="chapter-directory">
+        <a href="chapter01.html">Chapitre 01</a>
+        <a href="chapter02.html">Chapitre 02</a>
+        <a href="chapter03.html">Chapitre 03</a>
+        <a href="chapter04.html">Chapitre 04</a>
+        <a href="chapter05.html">Chapitre 05</a>
+        <a href="chapter06.html">Chapitre 06</a>
+        <a href="chapter07.html">Chapitre 07</a>
+        <a href="chapter08.html">Chapitre 08</a>
+        <a href="chapter09.html">Chapitre 09</a>
+        <a href="chapter10.html">Chapitre 10</a>
+        <a href="chapter11.html">Chapitre 11</a>
+        <a href="chapter12.html">Chapitre 12</a>
+        <a href="chapter13.html">Chapitre 13</a>
+        <a href="chapter14.html">Chapitre 14</a>
+        <a href="chapter15.html">Chapitre 15</a>
+        <a href="chapter16.html">Chapitre 16</a>
+        <a href="chapter17.html">Chapitre 17</a>
+        <a href="chapter18.html">Chapitre 18</a>
+        <a href="chapter19.html">Chapitre 19</a>
+        <a href="chapter20.html">Chapitre 20</a>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Moon Slayer - Chapitre 1</h1>
+        <div class="image-container">
+            <img src="images/01.jpg" alt="Page 01">
+        </div>
+        <div class="image-container">
+            <img src="images/02.jpg" alt="Page 02">
+        </div>
+        <div class="image-container">
+            <img src="images/03.jpg" alt="Page 03">
+        </div>
+        <!-- Ajoutez plus d'images ici -->
+    </div>
+
+    <!-- Navigation en bas -->
+    <div class="footer-nav">
+        <a href="chapter1.html">Chapitre Précédent</a>
+        <a href="chapter2.html">Chapitre Suivant</a>
+    </div>
+</body>
+</html>
